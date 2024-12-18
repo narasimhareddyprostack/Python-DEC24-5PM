@@ -1,13 +1,4 @@
-Required softwares and IDE
-===========================
-
-a)VS Code 
-b)Thonny
-c)Jypiter Notebook
-d)Pycharm  
-e)Google co-lab 
-
-[{"id":1,"name":"Rahul","gender":"Male","loc":"New Delhi"},
+users=[{"id":1,"name":"Rahul","gender":"Male","loc":"New Delhi"},
 {"id":2,"name":"Sonia","gender":"Female","loc":"New Delhi"},
 {"id":3,"name":"Priyanka","gender":"Female","loc":"New Delhi"},
 {"id":4,"name":"Modi","gender":"Male","loc":"New Delhi"},
@@ -107,28 +98,12 @@ e)Google co-lab
 {"id":98,"name":"Junie","gender":"Female","loc":"Hengfeng"},
 {"id":99,"name":"Maryanna","gender":"Polygender","loc":"Pytalovo"},
 {"id":100,"name":"Tally","gender":"Female","loc":"Tilburg"}]
+print("No of users:",len(users))
 
-
-Assignments
-==========
-1)print all user names - using for loop and while loop.
-2)print only male/female users
-3)collect all male/female user in into new list.
-4)print no of male/female users from given list ie users.
-5)print no of users from given list object.
-
-
-
-employee={
-    'eid':101,
-    'ename':'Rahul',
-    'esal':45000,
-    'eloc':['Wayanad',"New Delhi","Noida"],
-    'address':{
-        'city':'Bangalore',
-        'Pincode':560037
-    }
-}
-
-
-
+#print all male user names - while loop
+i=0
+while i<=len(users)-1:
+    if users[i]['gender'] =='Male':
+        print(users[i].get('name'))
+    
+    i=i+1
