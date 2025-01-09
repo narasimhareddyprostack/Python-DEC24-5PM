@@ -1,0 +1,2 @@
+1) fetch and print all male users from mongodb collection - users
+2) fetch and print all female users from mongodb collection - users
