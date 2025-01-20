@@ -2,7 +2,11 @@
 import mysql.connector
 dbcon=None
 try:
-    dbcon = mysql.connector.connect(host='localhost',user='root',password='root',database='6pm')
+    dbcon = mysql.connector.connect(host='localhost',
+                                    user='root',
+                                    password='root',
+                                    database='6pm'
+                                    )
     cursor = dbcon.cursor()
     sql_st = ''' 
             create table employee(

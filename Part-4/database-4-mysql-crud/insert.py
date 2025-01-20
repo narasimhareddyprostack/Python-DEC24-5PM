@@ -1,5 +1,4 @@
 import mysql.connector
-
 dbcon=None 
 try:
     dbcon = mysql.connector.connect(host='localhost',
